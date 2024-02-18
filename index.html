@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Budget App (Javascript)</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles.css" />
+
+  </head>
+
+  <body>
+
+        <h1>BUDGET APP</h1>
+        <h3>Please Enter Your Budget</h3>
+        <input id="budget-input" type="number" value="" inputmode="numeric" />
+        <button id="calculate" onclick="addBudget()">Calculate</button>
+     
+        <br>
+        <br>
+
+        <label for="BUDGET">BUDGET</label>
+        <div id="budget-amount" class="val success-color">$0</div>
+        <label for="EXPENSES">EXPENSES</label>
+        <div id="expenses-amount" class="val success-color">$0</div>
+        <label for="BALANCE">BALANCE</label>
+        <div id="balance-amount" class="val success-color">$0</div>
+        
+        <br>
+
+        <h3>Please Enter Your Expense (Description)</h3>
+        <input id="expense-description" type="text" />
+        
+        <br>
+
+        <h3>Please Enter Expense Amount</h3>
+        <input id="expense-input" type="number" inputmode="numeric" />
+        <button id="add-expense" class="btn">Add Expense</button>
+
+
+        <table id="expenses-list"></table>
+
+        <script src="/src/main.js"></script>
+  </body>
+</html>
+
